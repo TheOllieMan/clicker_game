@@ -1,1 +1,41 @@
-feffe
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/styles/style.css" />
+        <title>Incremental Game</title>
+    </head>
+    <body>
+        <div class="game-container">
+            <h1>ClickGame</h1>
+            <div class="score-container">
+                <p>Score: <span id="score">0</span></p>
+                <button id="clickBtn" onclick="clickMe()">Click Me!</button>
+                <button id="buyCursorBtn" onclick="buyCursor()">
+                    Buy Cursor
+                </button>
+                <button id="buyUpgradeBtn" onclick="buyUpgrade()">
+                    Buy Upgrade
+                </button>
+                <button id="buyAutoClickerBtn" onclick="buyAutoClicker()">
+                    Buy Auto Clicker
+                </button>
+            </div>
+            <div class="stats-container">
+                <p>Total Cumulative Score: <span id="totalScore">0</span></p>
+                <p>
+                    Total Score per Cursor: <span id="totalCursorScore">0</span>
+                </p>
+                <p>Total Clicks: <span id="totalClicks">0</span></p>
+                <p>Clicks Per Second: <span id="clicksPerSecond">0</span></p>
+                <p>Cursors Owned: <span id="cursorsOwned">0</span></p>
+                <p>Upgrades Owned: <span id="upgradesOwned">0</span></p>
+                <p>
+                    Auto Clickers Owned: <span id="autoClickersOwned">0</span>
+                </p>
+            </div>
+        </div>
+        <script src="/scripts/script.js"></script>
+    </body>
+</html>
